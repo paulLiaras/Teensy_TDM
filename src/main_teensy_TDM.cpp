@@ -13,8 +13,6 @@ AudioAnalyzePeak      peakInL;
 AudioAnalyzePeak      peakInR; 
 
 // --- ROUTAGE 1 : PC -> Teensy (USB) -> Daisy (TDM) ---
-// Canal USB Gauche (0) -> Canal TDM 0
-// Canal USB Droit (1) -> Canal TDM 2 (Qui correspond au Slot 1 de la Daisy !)
 AudioConnection       patchOutL(usbIn, 0, tdmOut, 0); 
 AudioConnection       patchOutR(usbIn, 1, tdmOut, 2); 
 
